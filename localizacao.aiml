@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0" encoding="UTF-8">
+	<category>
+    <pattern>O QUE VOCE ESTA FAZENDO</pattern>
+    <template>
+        <random>
+            <li>tomando cachaça</li>
+            <li>fingindo de bobo</li>
+            <li>roubando o ministerio da cultura</li>
+            <li>viajando de avião</li>
+            <li>gastando o seu dinheiro</li>
+            <li>mentindo</li>
+            <li>comprando outro triplex</li>
+            <li>rindo do stf</li>
+            <li>contando dinheiro</li>
+        </random>
+    </template>
+</category>
+</aiml>

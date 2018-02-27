@@ -1,0 +1,19 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <!-- std-startup.xml -->
+
+    <category>
+
+        <pattern>LOAD AIML B</pattern>
+
+        <!-- Template is the response to the pattern -->
+        <!-- This learn an aiml file -->
+        <template>
+            <learn>comprimentos.aiml</learn>
+            <learn>localizacao.aiml</learn>
+            <!-- Acrescente os demais aiml aqui -->
+            <!--<learn>aiml_file.aiml</learn>-->
+        </template>
+        
+    </category>
+
+</aiml>
