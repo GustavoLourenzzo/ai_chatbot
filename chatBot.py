@@ -10,7 +10,7 @@ else:
     ai.saveBrain("bot_brain.brn")
 
 def nameBot():
-    return "lula"
+    return "Beth"
 
 def comands(text):
     resposta = None
