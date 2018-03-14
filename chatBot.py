@@ -1,16 +1,16 @@
-import aiml
-import os, wikipedia
+import aiml, os, wikipedia, sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import (QApplication, QWidget, QPushButton, QLineEdit, QHBoxLayout, QMessageBox, QRadioButton, QGroupBox, QVBoxLayout)
 from PyQt5.QtGui import QIcon
-import sys
 from PyQt5 import QtCore, QtGui, QtWidgets,uic
+from bs4 import BeautifulSoup
+
 
 ai = aiml.Kernel() # inicialização
 
 #config wikipedia e definição
 wikipedia.set_lang('pt') #definir linguagem
-keywords = ['o que é','o que e', 'quem é', 'quem foi', 'definição', 'defina']
+keywords = ['o que é ','o que e ', 'quem é ', 'quem foi ', 'definição ', 'defina ']
 
 def get_answer(text):
     result = None
@@ -43,16 +43,17 @@ def comands(text):
 
 #ai.learn('start.xml') # lê o arquivo principal da AIML e faz referências aos outros
 #ai.respond('load aiml b') # faz com que os outros arquivos da AIML sejam carregados
-'''
+
 while True:
     frase = input('Você: ')
     resposta = comands(frase)
     if resposta == None:
-        resposta = ai.respond(frase)
+            resposta = get_answer(frase)
+            if resposta == None:
+                resposta = ai.respond(frase)
     print (nameBot() +": ", resposta)
-    '''
 
-
+"""
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -73,6 +74,8 @@ class MainWindow(QtWidgets.QMainWindow):
             if resposta == None:
                 resposta = ai.respond(self.text)
         self.corpo.insertHtml('<div style="padding: 20px; text-align: right;"><br><strong>'+ nameBot() +':</strong><br><br>'+ resposta +'<br><br></div>')
+        #soup = BeautifulSoup('<div style="padding: 20px; text-align: right;"><br><strong>'+ nameBot() +':</strong><br><br>'+ resposta +'<br><br></div>', "lxml")
+        #self.corpo.insertHtml(soup.get_text())
         
 
 
@@ -83,7 +86,7 @@ if __name__ == '__main__' :
     sys.exit(app.exec_())
     
 
-"""
+
 
 root = QApplication(sys.argv)
 app = Window()

@@ -1,7 +1,38 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0" encoding="UTF-8">
 	<category>
         <pattern>OI</pattern>
         <template>ola Tudo bem?</template>
     </category>
+
+    <category>
+		<pattern>MEU NOME E *</pattern>
+		<template>ola <set name = "username"> <star/>! </set>, <br/> o meu e <set name="myName">Beth</set>, espero poder te ajudar em seu aprendizado</template>
+    </category>
+
+    <!-- DESPEDIDAS -->
+    <category>
+      <pattern>TCHAU</pattern>
+      <template>Tchau<br/>Ate Mais</template>
+    </category>
+   
+    <category>
+      <pattern>TCHAU *</pattern>
+      <template>
+         <srai>Tchau<br/>Ate mais </srai><get name = "username"/>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ADEUS</pattern>
+      <template>Adeus<br/>Ate a proxima ...</template>
+    </category>
+   
+    <category>
+      <pattern>ADEUS *</pattern>
+      <template>
+         <srai>Adeus<br/>Ate a proxima ...</srai>
+      </template>
+    </category>
+
 </aiml>

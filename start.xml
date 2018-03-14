@@ -9,6 +9,7 @@
         <!-- This learn an aiml file -->
         <template>
             <learn>files/comprimentos.aiml</learn>
+            <learn>files/sistemaCirculatorio.aiml</learn>
             <!-- Acrescente os demais aiml aqui -->
             <!--<learn>file/aiml_file.aiml</learn>-->
         </template>

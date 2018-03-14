@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0" encoding="UTF-8">
+	<!-- Gatilhos para setar o topic  -->
+	<!-- O {topic} e importante -->
+	<category>
+		<pattern>
+			O * E IMPORTANTE
+		</pattern>
+		<template> 
+			<random>
+				<li>Bom ... <br/> O <set name = "topic"><star/></set> serve para muitas coisas</li>
+				<li>O <set name = "topic"><star/></set> tem muita utilidade.</li>
+				<li>O <set name = "topic"><star/></set> e muito importante.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>
+			* O * E IMPORTANTE *
+		</pattern>
+		<template> 
+			<random>
+				<li>Bom ... <br/> O <set name = "topic"><star/></set> serve para muitas coisas</li>
+				<li>O <set name = "topic"><star/></set> tem muita utilidade.</li>
+				<li>O <set name = "topic"><star/></set> e muito importante.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>
+			O * E IMPORTANTE *
+		</pattern>
+		<template> 
+			<random>
+				<li>Bom ... <br/> O <set name = "topic"><star/></set> serve para muitas coisas</li>
+				<li>O <set name = "topic"><star/></set> tem muita utilidade.</li>
+				<li>O <set name = "topic"><star/></set> e muito importante.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>
+			* O * E IMPORTANTE
+		</pattern>
+		<template> 
+			<random>
+				<li>Bom ... <br/> O <set name = "topic"><star/></set> serve para muitas coisas</li>
+				<li>O <set name = "topic"><star/></set> tem muita utilidade.</li>
+				<li>O <set name = "topic"><star/></set> e muito importante.</li>
+			</random>
+		</template>
+	</category>
+	<!-- fim && O {topic} e importante -->
+	<!-- fim ################################  -->
+
+	<!-- ###################Topicos####################  -->
+	<!-- Topico coração -->
+	<topic name="CORAÇÃO">
+		<!-- {} para que serve o coração {} -->
+		<category>
+			<pattern>
+				PARA QUE SERVE O CORAÇÃO
+			</pattern>
+			<template>
+				O coração e a bomba propulsora que faz o sangue circular por todo o corpo.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				* PARA QUE SERVE O CORAÇÃO *
+			</pattern>
+			<template>
+				<srai>PARA QUE SERVE O CORAÇÃO</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				PARA QUE SERVE O CORAÇÃO *
+			</pattern>
+			<template>
+				<srai>PARA QUE SERVE O CORAÇÃO</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				* PARA QUE SERVE O CORAÇÃO
+			</pattern>
+			<template>
+				<srai>PARA QUE SERVE O CORAÇÃO</srai>
+			</template>
+		</category>
+		<!-- fim && {} para que serve o coração {} -->
+		<!-- {} Onde ele fica (coração) {} -->
+		<category>
+			<pattern>
+				ONDE ELE FICA
+			</pattern>
+			<template>
+				Localiza-se na cavidade torácica entre os pulmões, no espaço mediastínico.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				* ONDE ELE FICA *
+			</pattern>
+			<template>
+				<srai>ONDE ELE FICA</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ONDE ELE FICA *
+			</pattern>
+			<template>
+				<srai>ONDE ELE FICA</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				* ONDE ELE FICA
+			</pattern>
+			<template>
+				<srai>ONDE ELE FICA</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				* ONDE O CORAÇÃO FICA *
+			</pattern>
+			<template>
+				<srai>ONDE ELE FICA</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ONDE O CORAÇÃO FICA *
+			</pattern>
+			<template>
+				<srai>ONDE ELE FICA</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ONDE O CORAÇÃO FICA *
+			</pattern>
+			<template>
+				<srai>ONDE ELE FICA</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ONDE O CORAÇÃO FICA
+			</pattern>
+			<template>
+				<srai>ONDE ELE FICA</srai>
+			</template>
+		</category>
+		<!-- fim && {} Onde ele fica (coração) {} -->
+		<!-- {} O que tem dentro (coração) {} -->
+		<category>
+			<pattern>O QUE TEM DENTRO</pattern>
+			<template>
+				A parede do coração é constituída por três camadas: o epicárdio, o miocárdio e o endocárdio.
+			</template>
+		</category>
+		<category>
+			<pattern>O QUE TEM DENTRO *</pattern>
+			<template>
+				<srai>O QUE TEM DENTRO</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>* O QUE TEM DENTRO *</pattern>
+			<template>
+				<srai>O QUE TEM DENTRO</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>* O QUE TEM DENTRO</pattern>
+			<template>
+				<srai>O QUE TEM DENTRO</srai>
+			</template>
+		</category>
+		<!-- fim && {} O que tem dentro (coração) {} -->
+		<!-- {} como ele e (coração) {} -->
+		<category>
+			<pattern>
+			COMO ELE E
+			</pattern>
+			<template>
+				O coração é um órgão muscular, e divide-se em quatro cavidades. Na parte superior situam-se as aurículas direita e esquerda e, na parte inferior, os ventrículos direito e esquerdo.
+			</template>
+		</category>
+		<category>
+			<pattern>
+			* COMO ELE E *
+			</pattern>
+			<template>
+				<srai>COMO ELE E</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+			* COMO ELE E
+			</pattern>
+			<template>
+				<srai>COMO ELE E</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+			COMO ELE E *
+			</pattern>
+			<template>
+				<srai>COMO ELE E</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+			* COMO O CORAÇÃO E *
+			</pattern>
+			<template>
+				<srai>COMO ELE E</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+			* COMO O CORAÇÃO E
+			</pattern>
+			<template>
+				<srai>COMO ELE E</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+			COMO O CORAÇÃO E *
+			</pattern>
+			<template>
+				<srai>COMO ELE E</srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+			COMO O CORAÇÃO E
+			</pattern>
+			<template>
+				<srai>COMO ELE E</srai>
+			</template>
+		</category>
+		<!-- fim && {} O que tem dentro (coração) {} -->
+		
+
+	</topic>
+	<!-- fim  coração  -->
+	<!-- fim topic's  -->
+</aiml>
