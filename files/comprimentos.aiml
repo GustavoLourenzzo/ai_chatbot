@@ -6,8 +6,12 @@
     </category>
 
     <category>
-		<pattern>MEU NOME E *</pattern>
-		<template>ola <set name = "username"> <star/>! </set>, <br/> o meu e <set name="myName">Beth</set>, espero poder te ajudar em seu aprendizado</template>
+		  <pattern>MEU NOME E *</pattern>
+		  <template>ola <set name = "username"> <star/>! </set>, <br/> o meu e <get name="myName" />, espero poder te ajudar em seu aprendizado</template>
+    </category>
+    <category>
+        <pattern>QUAL E O SEU NOME</pattern>
+        <template>Meu nome e <get name="myName"/></template>
     </category>
 
     <!-- DESPEDIDAS -->

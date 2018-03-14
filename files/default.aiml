@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0" encoding="UTF-8">
+	<category>
+		<pattern>*</pattern>
+		<template>
+			<random>
+				<li>Poderia repetir ou especificar sua pergunta, <br/> não entendi.</li>
+				<li>Não compreendi bem a pergunta, poderia repetir ou refazer.</li>
+				<li>Estou um pouco devagar hoje kkkk, poderia refazer a pergunta</li>
+			</random>
+		</template>
+	</category>
+</aiml>

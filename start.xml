@@ -12,6 +12,7 @@
             <learn>files/sistemaCirculatorio.aiml</learn>
             <!-- Acrescente os demais aiml aqui -->
             <!--<learn>file/aiml_file.aiml</learn>-->
+            <learn>files/default.aiml</learn>
         </template>
         
     </category>

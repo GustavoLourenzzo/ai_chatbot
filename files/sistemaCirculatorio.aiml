@@ -20,9 +20,9 @@
 		</pattern>
 		<template> 
 			<random>
-				<li>Bom ... <br/> O <set name = "topic"><star/></set> serve para muitas coisas</li>
-				<li>O <set name = "topic"><star/></set> tem muita utilidade.</li>
-				<li>O <set name = "topic"><star/></set> e muito importante.</li>
+				<li>Bom ... <br/> O <set name = "topic"><star index="2"/></set> serve para muitas coisas</li>
+				<li>O <set name = "topic"><star index="2"/></set> tem muita utilidade.</li>
+				<li>O <set name = "topic"><star index="2"/></set> e muito importante.</li>
 			</random>
 		</template>
 	</category>
@@ -32,9 +32,9 @@
 		</pattern>
 		<template> 
 			<random>
-				<li>Bom ... <br/> O <set name = "topic"><star/></set> serve para muitas coisas</li>
-				<li>O <set name = "topic"><star/></set> tem muita utilidade.</li>
-				<li>O <set name = "topic"><star/></set> e muito importante.</li>
+				<li>Bom ... <br/> O <set name = "topic"><star index="1"/></set> serve para muitas coisas</li>
+				<li>O <set name = "topic"><star index="1"/></set> tem muita utilidade.</li>
+				<li>O <set name = "topic"><star index="1"/></set> e muito importante.</li>
 			</random>
 		</template>
 	</category>
@@ -44,13 +44,34 @@
 		</pattern>
 		<template> 
 			<random>
-				<li>Bom ... <br/> O <set name = "topic"><star/></set> serve para muitas coisas</li>
-				<li>O <set name = "topic"><star/></set> tem muita utilidade.</li>
-				<li>O <set name = "topic"><star/></set> e muito importante.</li>
+				<li>Bom ... <br/> O <set name = "topic"><star index= "2"/></set> serve para muitas coisas</li>
+				<li>O <set name = "topic"><star index="2"/></set> tem muita utilidade.</li>
+				<li>O <set name = "topic"><star index="2"/></set> e muito importante.</li>
 			</random>
 		</template>
 	</category>
 	<!-- fim && O {topic} e importante -->
+	<!-- saber sobre {topic} -->
+	<category>
+		<pattern>SABER SOBRE *</pattern>	
+		<template>
+			<random>
+				<li>Sim claro ...<br/><think><set name = "topic"><star/></set></think>Pode perguntar</li>
+				<li>Tudo bem, <think><set name = "topic"><star/></set></think>o que gostaria de saber</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>* SABER SOBRE *</pattern>	
+		<template>
+			<random>
+				<li>Sim claro ...<br/><think><set name = "topic"><star index="2" /></set></think>Pode perguntar</li>
+				<li>Tudo bem, <think><set name = "topic"><star index="2"/></set></think>o que gostaria de saber</li>
+			</random>
+		</template>
+	</category>
+	<!-- fim && saber sobre {topic} -->
+
 	<!-- fim ################################  -->
 
 	<!-- ###################Topicos####################  -->
@@ -248,9 +269,99 @@
 			</template>
 		</category>
 		<!-- fim && {} O que tem dentro (coração) {} -->
-		
+		<!-- {} O que ele faz ? (coração) {} | como funciona | para que serve  -->
+		<category>
+			<pattern>O QUE ELE FAZ</pattern>
+			<template>o coração bombeia o sangue através dos vasos sanguíneos do sistema circulatório.<br/> O sangue por sua fornece ao corpo oxigénio e nutrientes e ajuda a eliminar resíduos metabólicos.</template>
+		</category>
+		<category>
+			<pattern>O QUE ELE FAZ *</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>* O QUE ELE FAZ</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>* O QUE ELE FAZ *</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>O QUE O CORAÇÃO FAZ</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>* O QUE O CORAÇÃO FAZ</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>O QUE O CORAÇÃO FAZ *</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>* O QUE O CORAÇÃO FAZ *</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>COMO FUNCIONA</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>* COMO FUNCIONA</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>COMO FUNCIONA *</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>* COMO FUNCIONA *</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>PARA QUE SERVE</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>* PARA QUE SERVE</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>PARA QUE SERVE *</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
+		<category>
+			<pattern>* PARA QUE SERVE *</pattern>
+			<template><srai>O QUE ELE FAZ</srai></template>
+		</category>
 
+		<!-- fim && {} O que ele faz ? (coração) {} | como funciona | para que serve  -->
+		<!-- como ele bate  -->
+		<category>
+			<pattern>ELE BATE</pattern>
+			<template>O coração bombeia sangue ao ritmo determinado por um grupo de células marca-passo situadas no nódulo sinoatrial. Estas células produzem uma corrente elétrica que percorre o nódulo atrioventricular e o sistema de condução elétrica do coração, provocando a sua contração a um ritmo regular.</template>
+		</category>
+		<category>
+			<pattern>* ELE BATE</pattern>
+			<template><srai>ELE BATE</srai></template>
+		</category>
+		<category>
+			<pattern>ELE BATE *</pattern>
+			<template><srai>ELE BATE</srai></template>
+		</category>
+		<category>
+			<pattern>* ELE BATE *</pattern>
+			<template><srai>ELE BATE</srai></template>
+		</category>
+		<!-- fim && como ele bate  -->
 	</topic>
 	<!-- fim  coração  -->
+	<!-- TOPIC VASOS SANGUINIOS -->
+	<topic name="VASOS SANGUINEOS">
+		<!--<category>
+			
+		</category> -->
+	</topic>
+	<!-- fim  TOPIC VASOS SANGUINIOS -->
 	<!-- fim topic's  -->
 </aiml>

@@ -8,9 +8,14 @@ from bs4 import BeautifulSoup
 
 ai = aiml.Kernel() # inicialização
 
+#setar as variaveis antes da inicialização
+ai.setPredicate("myName", "Beth")
+ai.setPredicate("myAge", "25")
+#ai.setPredicate()
+
 #config wikipedia e definição
 wikipedia.set_lang('pt') #definir linguagem
-keywords = ['o que é ','o que e ', 'quem é ', 'quem foi ', 'definição ', 'defina ']
+keywords = ['o que é ','o que e ', 'quem é ','quem e ', 'quem foi ', 'definição ', 'defina ']
 
 def get_answer(text):
     result = None
@@ -19,7 +24,7 @@ def get_answer(text):
             result = text.replace(key, '')
     if result is not None:
         results = wikipedia.search(result)
-        result = wikipedia.summary(results[0], sentences=2)
+        result = wikipedia.summary(results[0], sentences=1)
     return result
 #fim**
 
