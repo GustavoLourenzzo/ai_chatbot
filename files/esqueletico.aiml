@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Base de conhecimento referente ao Sistema Esquelético Humano -->
+
+<category>
+	<pattern>^ QUE ^ OSSO ^</pattern>
+	<template>É uma estrutura formada por tecido ósseo, muito rígido.</template>
+</category>
+
+<category>
+    <pattern>^ COMPOSICAO ^</pattern>
+    <template><srai>FEITO</srai></template>
+</category>
+
+<category>
+    <pattern>^ COMPOSTO ^</pattern>
+    <template><srai>FEITO</srai></template>
+</category>
+
+<category>
+    <pattern>^ FEITO ^</pattern>
+    <template><think><set name = "topic">COMPOSICAO</set></think>
+              <srai>QUAL COMPOSICAO</srai>
+    </template>
+</category>
+
+<topic name="COMPOSICAO">
+    <category>
+        <pattern> ^ QUAL ^  COMPOSICAO ^ </pattern>
+        <template><srai>COMPOSICAO</srai></template>
+    </category>
+
+    <category>
+        <pattern> ^ QUE ^ COMPOSTO ^ </pattern>
+        <template><srai>COMPOSICAO</srai></template>
+    </category>
+
+    <category>
+        <pattern>COMPOSICAO</pattern>
+        <template>É formado por fibras de colágeno, cálcio e fibras proteoglicanas.</template>
+    </category>
+</topic>
+
+<category>
+    <pattern>^ QUANTIDADE ^</pattern>
+    <template><srai>QUANTOS</srai></template>
+</category>
+
+<category>
+    <pattern>^ QUANTOS ^</pattern>
+    <template><think><set name = "topic">QTD</set></think>
+            <srai>DEFAULTQTD</srai>
+    </template>
+</category>
+
+<topic name="QTD">
+    
+    <category>
+        <pattern>DEFAULTQTD</pattern>
+        <template>Não entendi sua pergunta, pode ser mais específico?</template>
+    </category>
+
+    <category>
+        <pattern>^ QUANTOS ^ PE ^</pattern>
+        <template>São 5 ossos no pé.</template>
+    </category>
+
+    <category>
+        <pattern>^ QUANTOS ^ MAO ^</pattern>
+        <template>A mão humana possui 27 ossos.</template>
+    </category>
+
+    <category>
+        <pattern>^ QUANTOS ^ TOTAL ^</pattern>
+        <template>O corpo humano possui 206 ossos.</template>
+    </category>
+</topic>
+
+</aiml>
