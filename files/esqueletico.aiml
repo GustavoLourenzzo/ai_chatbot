@@ -151,7 +151,12 @@
 </topic>
 
 <category>
-    <pattern>^ FUNCAO ^</pattern>
+    <pattern>^ SERVE ^ OSSOS ^</pattern>
+    <template><srai>FUNCAO OSSOS</srai></template>
+</category>
+
+<category>
+    <pattern>^ FUNCAO ^ OSSOS ^</pattern>
     <template><think><set name="topic">FUNCAO</set></think><srai>DEFAULT</srai></template>
 </category>
 
@@ -168,12 +173,27 @@
     </category>
     
     <category>
+        <pattern>^ SERVE ^ ESQUELETICO ^</pattern>
+        <template><srai>FUNCAO ESQUELETICO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SERVE ^ OSSOS ^</pattern>
+        <template><srai>FUNCAO ESQUELETICO</srai></template>
+    </category>
+    
+    <category>
         <pattern>^ FUNCAO ^ OSSOS ^</pattern>
         <template><srai>FUNCAO ESQUELETICO</srai></template>
     </category>
     
     <category>
         <pattern>^ FUNCAO ^ CRANIO ^</pattern>
+        <template>Destinado a proteger e abrigar o cérebro além de ser constituído pelo aparelho mastigador.</template>
+    </category>
+    
+    <category>
+        <pattern>^ SERVE ^ CRANIO ^</pattern>
         <template>Destinado a proteger e abrigar o cérebro além de ser constituído pelo aparelho mastigador.</template>
     </category>
     
