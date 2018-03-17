@@ -5,8 +5,7 @@
 
         <pattern>LOAD AIML B</pattern>
 
-        <!-- Template is the response to the pattern -->
-        <!-- This learn an aiml file -->
+        
         <template>
             <learn>files/comprimentos.aiml</learn>
             <learn>files/sistemaCirculatorio.aiml</learn>

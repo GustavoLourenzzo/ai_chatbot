@@ -1,9 +1,8 @@
 import aiml, os, wikipedia, sys
 from PyQt5.QtWidgets import *
-from PyQt5.QtWidgets import (QApplication, QWidget, QPushButton, QLineEdit, QHBoxLayout, QMessageBox, QRadioButton, QGroupBox, QVBoxLayout)
 from PyQt5.QtGui import QIcon
 from PyQt5 import QtCore, QtGui, QtWidgets,uic
-from bs4 import BeautifulSoup
+
 
 
 ai = aiml.Kernel() # inicialização
@@ -11,20 +10,38 @@ ai = aiml.Kernel() # inicialização
 #setar as variaveis antes da inicialização
 ai.setPredicate("myName", "Beth")
 ai.setPredicate("myAge", "25")
+
 #ai.setPredicate()
 
 #config wikipedia e definição
 wikipedia.set_lang('pt') #definir linguagem
 keywords = ['o que é ','o que e ', 'quem é ','quem e ', 'quem foi ', 'definição ', 'defina ']
+categories = ['Sistema circulatório']
 
 def get_answer(text):
     result = None
     for key in keywords:
         if text.startswith(key):
             result = text.replace(key, '')
-    if result is not None:
-        results = wikipedia.search(result)
-        result = wikipedia.summary(results[0], sentences=1)
+    if result == None:
+        result =  text
+    try:
+        WikiPage = wikipedia.page(title = result, auto_suggest = True)
+        cat = WikiPage.categories
+        cat2 = []
+        for ct in cat:
+            cat2.append(ct.replace('Categoria:', ''))
+        for cat_seach in cat2:
+            for categ_seach in categories:
+                if categ_seach == cat_seach:
+                    result = wikipedia.summary(wikipedia.search(WikiPage.title)[0], sentences=1)
+                    return result
+        result = "Desculpe mais esse assunto não faz parte do nosso contexto, por favor vamos falar de outra coisa."
+        return result
+        #results = wikipedia.search(result)
+        #result = wikipedia.summary(results[0], sentences=1)
+    except:
+        result = "Desculpe a sua pergunta foi um pouco ambigua ou nao foi encontrada, refaça a pergunta, eu gostaria muito de poder ajudar."
     return result
 #fim**
 
@@ -53,10 +70,14 @@ while True:
     frase = input('Você: ')
     resposta = comands(frase)
     if resposta == None:
+        resposta = ai.respond(frase)
+        if resposta == '###':
+            print(nameBot()+': ', 'Hum ... não encontrei essa pergunta em minha base da dados.\nPorem posso verificar no wikipedia para você ...')
             resposta = get_answer(frase)
-            if resposta == None:
-                resposta = ai.respond(frase)
-    print (nameBot() +": ", resposta)
+            print(resposta)
+        else:
+            print (nameBot() +": ", resposta)
+    pass
 
 """
 class MainWindow(QtWidgets.QMainWindow):

@@ -353,14 +353,147 @@
 			<pattern>* ELE BATE *</pattern>
 			<template><srai>ELE BATE</srai></template>
 		</category>
+
 		<!-- fim && como ele bate  -->
 	</topic>
 	<!-- fim  coração  -->
 	<!-- TOPIC VASOS SANGUINIOS -->
 	<topic name="VASOS SANGUINEOS">
-		<!--<category>
-			
-		</category> -->
+		<!-- o que sao vasos sanguineos  -->
+		<category>
+			<pattern>O QUE SÃO OS VASOS SANGUINEOS</pattern>
+			<template>São as vias de transporte por onde o sangue circula.</template>
+		</category>
+		<category>
+			<pattern>O QUE SÃO OS VASOS SANGUINEOS *</pattern>
+			<template><srai>O QUE SÃO OS VASOS SANGUINEOS</srai></template>
+		</category>
+		<category>
+			<pattern>* O QUE SÃO OS VASOS SANGUINEOS</pattern>
+			<template><srai>O QUE SÃO OS VASOS SANGUINEOS</srai></template>
+		</category>
+		<category>
+			<pattern>* O QUE SÃO OS VASOS SANGUINEOS *</pattern>
+			<template><srai>O QUE SÃO OS VASOS SANGUINEOS</srai></template>
+		</category>
+		<!-- fim && o que sao vasos sanguineos  -->
+		<!-- como sao os vasos sanguineos  -->
+		<category>
+			<pattern>COMO SÃO OS VASOS SANGUINEOS</pattern>
+			<template>São divididos basicamente em artérias, veias e capilares</template>
+		</category>
+		<category>
+			<pattern>COMO SÃO OS VASOS SANGUINEOS *</pattern>
+			<template><srai>COMO SÃO OS VASOS SANGUINEOS</srai></template>
+		</category>
+		<category>
+			<pattern>* COMO SÃO OS VASOS SANGUINEOS</pattern>
+			<template><srai>COMO SÃO OS VASOS SANGUINEOS</srai></template>
+		</category>
+		<category>
+			<pattern>* COMO SÃO OS VASOS SANGUINEOS *</pattern>
+			<template><srai>COMO SÃO OS VASOS SANGUINEOS</srai></template>
+		</category>
+		<!-- fim && como sao os vasos sanguineos  -->
+		<!-- 3 subdivisoes dos vasos vasos sanguineos  -->
+		<category>
+			<pattern>SÃO AS ARTERIAS</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>* SÃO AS ARTERIAS</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>SÃO AS ARTERIAS *</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>* SÃO AS ARTERIAS *</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>E AS ARTERIAS</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>* E AS ARTERIAS</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>E AS ARTERIAS *</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>* E AS ARTERIAS *</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>SÃO ARTERIAS</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>* SÃO ARTERIAS</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>SÃO ARTERIAS *</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		<category>
+			<pattern>* SÃO ARTERIAS *</pattern>
+			<template>vasos que saem do coração e conduzem o sangue para todo o corpo</template>
+		</category>
+		.....
+		<category>
+			<pattern>SÃO AS VEIAS</pattern>
+			<template>vasos que carregam sangue dos tecidos ao coração</template>
+		</category>
+		<category>
+			<pattern>* SÃO AS VEIAS</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>SÃO AS VEIAS *</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>* SÃO AS VEIAS *</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>E AS VEIAS</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>* E AS VEIAS</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>E AS VEIAS *</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>* E AS VEIAS *</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>SÃO VEIAS</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>* SÃO VEIAS</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>SÃO VEIAS *</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<category>
+			<pattern>* SÃO VEIAS *</pattern>
+			<template><srai>SÃO AS VEIAS</srai></template>
+		</category>
+		<!-- fim && 3 subdivisoes dos vasos vasos sanguineos  -->
 	</topic>
 	<!-- fim  TOPIC VASOS SANGUINIOS -->
 	<!-- fim topic's  -->
