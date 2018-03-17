@@ -207,10 +207,10 @@
           <pattern>^ FARINGE ^</pattern>
           <template>
               <random>
-                  <li>Na faringe ocorre o fenômeno da deglutição.<srai>CURIOSIDADES</srai></li>
-                  <li>A faringe é um órgão que faz parte tanto do sistema respiratório quanto do sistema digestório.<srai>CURIOSIDADES</srai></li>
-                  <li>É um canal muscular membranoso, que se comunica com o nariz e a boca, ligando-os à laringe e ao esôfago.<srai>CURIOSIDADES</srai></li>
-                  <li>A faringe tem a função de fazer a passagem do ar inalado e dos alimentos ingeridos até os outros órgãos dos sistemas respiratório e digestório.<srai>CURIOSIDADES</srai></li>
+                  <li>Na faringe ocorre o fenômeno da deglutição.<srai>CURIOSIDADESA</srai></li>
+                  <li>A faringe é um órgão que faz parte tanto do sistema respiratório quanto do sistema digestório.<srai>CURIOSIDADESA</srai></li>
+                  <li>É um canal muscular membranoso, que se comunica com o nariz e a boca, ligando-os à laringe e ao esôfago.<srai>CURIOSIDADESA</srai></li>
+                  <li>A faringe tem a função de fazer a passagem do ar inalado e dos alimentos ingeridos até os outros órgãos dos sistemas respiratório e digestório.<srai>CURIOSIDADESA</srai></li>
               </random>
           </template>
       </category>
@@ -221,10 +221,24 @@
           <pattern>^ ESOFAGO ^</pattern>
           <template>
               <random>
-                  <li>O esôfago é um tubo muscular que liga a faringe ao estômago.<srai>CURIOSIDADES</srai></li>
-                  <li>É pelo esôfago por onde passam os alimentos ingeridos.<srai>CURIOSIDADES</srai></li>
-                  <li>Uma vez dentro do esôfago o alimento será impulsionado por meio de movimentos peristálticos, que são involuntários<srai>CURIOSIDADES</srai></li>
-                  <li>O esôfago é oco e formado por três camadas: mucosa, submucosa e muscular.<srai>CURIOSIDADES</srai></li>
+                  <li>O esôfago é um tubo muscular que liga a faringe ao estômago.<srai>CURIOSIDADESA</srai></li>
+                  <li>É pelo esôfago por onde passam os alimentos ingeridos.<srai>CURIOSIDADESA</srai></li>
+                  <li>Uma vez dentro do esôfago o alimento será impulsionado por meio de movimentos peristálticos, que são involuntários<srai>CURIOSIDADESA</srai></li>
+                  <li>O esôfago é oco e formado por três camadas: mucosa, submucosa e muscular.<srai>CURIOSIDADESA</srai></li>
+              </random>
+          </template>
+      </category>
+      ------------------------
+      
+      ------CuriosidadesA------
+      <category>
+          <pattern>CURIOSIDADESA</pattern>
+          <template>
+              <random>
+                  <li><br/>Você sabia que o movimento peristáltico do sistema digestivo é o responsável por podermos ingerir alimentos de cabeça para baixo?</li>
+                  <li><br/>Já ouviu falar que o esôfago é a parte mais estreita de todo o tubo digestivo?</li>
+                  <li><br/>Sabia que a sensação de fome tem origem no esôfago?</li>
+                  <li></li>
               </random>
           </template>
       </category>
@@ -232,13 +246,12 @@
       
       ------Curiosidades------
       <category>
-          <pattern>CURIOSIDADES</pattern>
+          <pattern>^ CURIOSIDADES ^</pattern>
           <template>
               <random>
                   <li><br/>Você sabia que o movimento peristáltico do sistema digestivo é o responsável por podermos ingerir alimentos de cabeça para baixo?</li>
                   <li><br/>Já ouviu falar que o esôfago é a parte mais estreita de todo o tubo digestivo?</li>
                   <li><br/>Sabia que a sensação de fome tem origem no esôfago?</li>
-                  <li></li>
               </random>
           </template>
       </category>
@@ -287,14 +300,29 @@
           <pattern>^ ESTOMAGO ^</pattern>
           <template>
               <random>
-                  <li>O estômago é onde os alimentos são pré-digeridos para serem absorvidos no intestino. <br/><srai>CURIOSIDADES</srai></li>
-                  <li>É no interior do estômago que se encontram as glândulas gástricas que produzem o suco gástrico.<br/><srai>CURIOSIDADES</srai></li>
-                  <li>O estômago é uma extensão do tubo digestivo localizado entre o esôfago e o intestino delgado.<br/><srai>CURIOSIDADES</srai></li>
-                  <li>O estômago é um dos principais órgãos responsáveis pela digestão das proteínas.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O estômago é onde os alimentos são pré-digeridos para serem absorvidos no intestino. <br/><srai>CURIOSIDADESA</srai></li>
+                  <li>É no interior do estômago que se encontram as glândulas gástricas que produzem o suco gástrico.<br/><srai>CURIOSIDADESA</srai></li>
+                  <li>O estômago é uma extensão do tubo digestivo localizado entre o esôfago e o intestino delgado.<br/><srai>CURIOSIDADESA</srai></li>
+                  <li>O estômago é um dos principais órgãos responsáveis pela digestão das proteínas.<br/><srai>CURIOSIDADESA</srai></li>
               </random>
           </template>
       </category>
       -----------------------------
+      
+      -------CuriosidadesA----------
+      <category>
+          <pattern>^ CURIOSIDADESA ^</pattern>
+          <template>
+              <random>
+                  <li>Sabia que se o estômago não renovasse o seu muco ele digeriria a si próprio?</li>
+                  <li>Você sabia que elasticidade do estômago permite que ele aumente sua capacidade em até 80 vezes?</li>
+                  <li>O estômago produz cerca de três litros de suco gástrico por dia. Sabia disso?</li>
+                  <li>Você sabia que o roncar do estômago pode acontecer a qualquer momento, mesmo quando não estamos com fome?</li>
+                  <li></li>
+              </random>
+          </template>
+      </category>
+      -------------------------------
       
       -------Curiosidades----------
       <category>
@@ -305,7 +333,6 @@
                   <li>Você sabia que elasticidade do estômago permite que ele aumente sua capacidade em até 80 vezes?</li>
                   <li>O estômago produz cerca de três litros de suco gástrico por dia. Sabia disso?</li>
                   <li>Você sabia que o roncar do estômago pode acontecer a qualquer momento, mesmo quando não estamos com fome?</li>
-                  <li></li>
               </random>
           </template>
       </category>
@@ -348,9 +375,9 @@
           <pattern>^ FIGADO ^</pattern>
           <template>
               <random>
-                  <li>O fígado é um órgão do corpo humano e pode executar mais de 500 funções. Uma das principais consiste em participar da produção de células sanguíneas. <br/><srai>CURIOSIDADES</srai></li>
-                  <li>O fígado é um órgão que atua como glândula exócrina (liberando secreções) e glândula endócrina, liberando substâncias no sangue e sistema linfático.<br/><srai>CURIOSIDADES</srai></li>
-                  <li>O fígado está relacionado com funções importantes do nosso corpo, como a regulação do metabolismo de vários nutrientes, síntese de proteínas e outras moléculas, degradação de hormônios e armazenamento de substâncias.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O fígado é um órgão do corpo humano e pode executar mais de 500 funções. Uma das principais consiste em participar da produção de células sanguíneas. <br/><srai>CURIOSIDADESA</srai></li>
+                  <li>O fígado é um órgão que atua como glândula exócrina (liberando secreções) e glândula endócrina, liberando substâncias no sangue e sistema linfático.<br/><srai>CURIOSIDADESA</srai></li>
+                  <li>O fígado está relacionado com funções importantes do nosso corpo, como a regulação do metabolismo de vários nutrientes, síntese de proteínas e outras moléculas, degradação de hormônios e armazenamento de substâncias.<br/><srai>CURIOSIDADESA</srai></li>
               </random>
           </template>
       </category>
@@ -359,6 +386,19 @@
       -------Curiosidades----------
       <category>
           <pattern>^ CURIOSIDADES ^</pattern>
+          <template>
+              <random>
+                  <li>Sabia que o fígado é a maior glândula e o segundo maior órgão do corpo humano?</li>
+                  <li>O fígado é o único órgão capaz de reconstitui até 75% dos seus tecidos. Sabido disto?</li>
+                  <li>Você sabia que o fígado é o órgão mais pesado do corpo? Ele representa entre 2% e 3% do nosso peso total.</li>
+              </random>
+          </template>
+      </category>
+      -------------------------------
+      
+      -------Curiosidades----------
+      <category>
+          <pattern>^ CURIOSIDADESA ^</pattern>
           <template>
               <random>
                   <li>Sabia que o fígado é a maior glândula e o segundo maior órgão do corpo humano?</li>
@@ -421,6 +461,17 @@
       -------Curiosidades----------
       <category>
           <pattern>^ CURIOSIDADES ^</pattern>
+          <template>
+              <random>
+                  <li>Você sabia que é possível viver sem o pâncreas? Para isso é necessário ingerir diariamente as enzimas por ele produzidas.</li>
+              </random>
+          </template>
+      </category>
+      -------------------------------
+      
+      -------CuriosidadesA----------
+      <category>
+          <pattern>^ CURIOSIDADESA ^</pattern>
           <template>
               <random>
                   <li>Você sabia que é possível viver sem o pâncreas? Para isso é necessário ingerir diariamente as enzimas por ele produzidas.</li>
@@ -561,8 +612,8 @@
           <pattern>^ ANUS ^</pattern>
           <template>
               <random>
-                  <li>O ânus é o orifício no final do intestino grosso por onde são eliminadas as fezes e gases intestinais.<br/><srai>CURIOSIDADES</srai></li>
-                  <li>O anus trata-se de uma abertura reguladora da saída das fezes, que são constantemente empurradas pela musculatura lisa do intestino.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O ânus é o orifício no final do intestino grosso por onde são eliminadas as fezes e gases intestinais.<br/><srai>CURIOSIDADESA</srai></li>
+                  <li>O anus trata-se de uma abertura reguladora da saída das fezes, que são constantemente empurradas pela musculatura lisa do intestino.<br/><srai>CURIOSIDADESA</srai></li>
               </random>
           </template>
       </category>
@@ -571,7 +622,7 @@
       -------Fezes----------
       <category>
           <pattern>^ FEZES ^</pattern>
-          <template>As fezes humanas consistem no material restante após a digestão e absorção dos alimentos pelo tubo digestivo.<br/><srai>CURIOSIDADES</srai></template>
+          <template>As fezes humanas consistem no material restante após a digestão e absorção dos alimentos pelo tubo digestivo.<br/><srai>CURIOSIDADESA</srai></template>
       </category>
       -----------------------------
       
@@ -580,10 +631,10 @@
           <pattern>^ DELGADO ^</pattern>
           <template>
               <random>
-                  <li>O intestino delgado é a parte do tubo digestivo que vai do estômago até o intestino grosso.<br/><srai>CURIOSIDADES</srai></li>
-                  <li>O intestino delgado é a porção do sistema digestório responsável por absorver a maior parte dos nutrientes que ingerimos.<br/><srai>CURIOSIDADES</srai></li>
-                  <li>O intestino delgado é responsável pela absorção da maior parte dos nutrientes. É dividido em duodeno, jejuno e íleo.<br/><srai>CURIOSIDADES</srai></li>
-                  <li>Com os movimentos do intestino delgado e com a ação dos sucos (pancreático e intestinal), o quimo é transformado em quilo, que é o produto final da digestão.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O intestino delgado é a parte do tubo digestivo que vai do estômago até o intestino grosso.<br/><srai>CURIOSIDADESA</srai></li>
+                  <li>O intestino delgado é a porção do sistema digestório responsável por absorver a maior parte dos nutrientes que ingerimos.<br/><srai>CURIOSIDADESA</srai></li>
+                  <li>O intestino delgado é responsável pela absorção da maior parte dos nutrientes. É dividido em duodeno, jejuno e íleo.<br/><srai>CURIOSIDADESA</srai></li>
+                  <li>Com os movimentos do intestino delgado e com a ação dos sucos (pancreático e intestinal), o quimo é transformado em quilo, que é o produto final da digestão.<br/><srai>CURIOSIDADESA</srai></li>
               </random>
           </template>
       </category>
@@ -608,9 +659,9 @@
           <pattern>^ GROSSO ^</pattern>
           <template>
               <random>
-                  <li>O intestino grosso é a última parte do trato gastrointestinal e do sistema digestivo em vertebrados.<br/><srai>CURIOSIDADES</srai></li>
-                  <li>É a parte responsável pelo importante processo de absorção da água, o que determina a consistência do bolo fecal.<br/><srai>CURIOSIDADES</srai></li>
-                  <li>O intestino grosso é um órgão do sistema digestório responsável pela absorção da água. É composto por três partes: o ceco, o cólon e o reto.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O intestino grosso é a última parte do trato gastrointestinal e do sistema digestivo em vertebrados.<br/><srai>CURIOSIDADESA</srai></li>
+                  <li>É a parte responsável pelo importante processo de absorção da água, o que determina a consistência do bolo fecal.<br/><srai>CURIOSIDADESA</srai></li>
+                  <li>O intestino grosso é um órgão do sistema digestório responsável pela absorção da água. É composto por três partes: o ceco, o cólon e o reto.<br/><srai>CURIOSIDADESA</srai></li>
               </random>
           </template>
       </category>
@@ -619,13 +670,25 @@
       -------Intestino----------
       <category>
           <pattern>^ INTESTINO</pattern>
-          <template>O intestino é o segmento do sistema digestivo que se estende a partir do estômago e termina no ânus. Ele é dividido em intestino delgado e intestino grosso.<br/><srai>CURIOSIDADES</srai></template>
+          <template>O intestino é o segmento do sistema digestivo que se estende a partir do estômago e termina no ânus. Ele é dividido em intestino delgado e intestino grosso.<br/><srai>CURIOSIDADESA</srai></template>
       </category>
       -----------------------------
       
       -------Curiosidades----------
       <category>
           <pattern>^ CURIOSIDADES ^</pattern>
+          <template>
+              <random>
+                  <li>Você sabia que o intestino delgado mede de 6 a 9 metros?</li>
+                  <li>Sabia que o intestino grosso é três vezes mais largo que o delgado?</li>
+              </random>
+          </template>
+      </category>
+      -------------------------------
+      
+      -------CuriosidadesA----------
+      <category>
+          <pattern>^ CURIOSIDADESA ^</pattern>
           <template>
               <random>
                   <li>Você sabia que o intestino delgado mede de 6 a 9 metros?</li>
@@ -689,9 +752,37 @@
           <pattern>^ DIGESTAO ^</pattern>
           <template>Digestão é a transformação dos alimentos em substâncias assimiláveis, realizada no aparelho digestório ou digestivo.</template>
       </category>
+      
+      <category>
+          <pattern>^ DIGERIR ^</pattern>
+          <template><srai>DIGESTAO</srai></template>
+      </category>
       -----------------------------
       
       -------Curiosidades----------
+      <category>
+          <pattern>^ CURIOSIDADESA ^</pattern>
+          <template>
+              <random>
+              <li><think><set name="topic">boca</set></think> <srai>CURIOSIDADES</srai>
+              </li>
+              <li><think><set name="topic">estomago</set></think><br/> <srai>CURIOSIDADESA</srai></li>
+              <li><think><set name="topic">tubos</set></think> <srai>CURIOSIDADESA</srai>
+              </li>
+              <li><think><set name="topic">intestino</set></think> <srai>CURIOSIDADESA</srai></li>
+              <li><think><set name="topic">pancreas</set></think> <srai>CURIOSIDADESA</srai>
+              </li>
+              <li><think><set name="topic">figado</set></think> <srai>CURIOSIDADESA</srai>
+              </li>
+          </random>
+          </template>
+      </category>
+      -------------------------------
+</topic>
+-------------------------------------------Fim Sistema Digestivo-------------------------------------------------------   
+
+
+-------Curiosidades----------
       <category>
           <pattern>^ CURIOSIDADES ^</pattern>
           <template>
@@ -710,7 +801,5 @@
           </template>
       </category>
       -------------------------------
-</topic>
--------------------------------------------Fim Sistema Digestivo-------------------------------------------------------   
   
 </aiml>
