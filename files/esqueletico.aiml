@@ -4,8 +4,18 @@
 <!-- Base de conhecimento referente ao Sistema Esquelético Humano -->
 
 <category>
+    <pattern>^ MAIOR ^ OSSO ^</pattern>
+    <template>O maior osso humano é o fêmur, osso da coxa, com 50 centímetros.</template>
+</category>
+
+<category>
+    <pattern>^ MENOR ^ OSSO ^</pattern>
+    <template>O menor osso humano é o estribo, fica no ouvido, e mede entre 2,6 e 3,4 mm.</template>
+</category>
+
+<category>
 	<pattern>^ QUE ^ OSSO ^</pattern>
-	<template>É uma estrutura formada por tecido ósseo, muito rígido.</template>
+	<template>Muito bem, começando pelo básico! Vamos lá: o osso é uma estrutura formada por tecido ósseo, muito rígido.</template>
 </category>
 
 <category>
@@ -58,7 +68,7 @@
     
     <category>
         <pattern>DEFAULTQTD</pattern>
-        <template>Não entendi sua pergunta, pode ser mais específico?</template>
+        <template>Hum...não entendi sua pergunta, pode ser mais específico?</template>
     </category>
 
     <category>
@@ -68,7 +78,7 @@
 
     <category>
         <pattern>^ QUANTOS ^ MAO ^</pattern>
-        <template>A mão humana possui 27 ossos.</template>
+        <template>A mão humana possui 54 ossos.</template>
     </category>
 
     <category>
@@ -76,5 +86,59 @@
         <template>O corpo humano possui 206 ossos.</template>
     </category>
 </topic>
+
+<category>
+    <pattern>^ QUAIS ^ OSSOS ^</pattern>
+    <template><think><set name="topic">OSSOMEBROS</set></think><srai>DEFAULT</srai></template>
+</category>
+
+<topic name="OSSOMEBROS">
+    
+    <category>
+        <pattern>DEFAULT</pattern>
+        <template>Hum... acho que não entendi sua pergunta, pode digitar novamente?</template>
+    </category>
+    
+    <category>
+        <pattern>^ QUAIS ^ OSSOS ^ MAO ^</pattern>
+        <template>Na mão, temos os seguintes ossos: carpo, metacarpo e falange.</template>
+    </category>
+    
+    <category>
+        <pattern>^ QUAIS ^ OSSOS ^ CABECA ^</pattern>
+        <template>Na cabeça temos o: crânio (ou expert, rs), maxilar e a mandíbula.</template>
+    </category>
+    
+    <category>
+        <pattern>^ QUAIS ^ OSSOS ^ PE ^</pattern>
+        <template>No pé temos o tarso, metatarso e as falanges.</template>
+    </category>
+    
+    <category>
+        <pattern>^ QUAIS ^ OSSOS ^ PERNA ^</pattern>
+        <template>Na perna encontramos o: fêmur, patela, tíbia (não confundir com o jogo) e  a fíbula.</template>
+    </category>
+    
+     <category>
+        <pattern>^ QUAIS ^ OSSOS ^ TORAX ^</pattern>
+        <template>Esse tem vários: clavícula, escápula, úmero, esterno, coluna vertebral, e as costelas (existiu um homem faltando uma, rs).</template>
+    </category>
+</topic>
+
+<!-- Curiosidades -->
+<category>
+    <pattern>^ CURIOSIDADE ^</pattern>
+    <template>
+        <random>
+            <li>Olha só que interessante: recém nascidos possuem 300 ossos, porém alguns se fundem
+            após determinado tempo.</li>
+            <li>Sabe aquela desculpa de ter ossos largos? Então, eles correspondem em média a 15% do nosso peso total. :'( </li>
+            <li>O desenvolvimento do esqueleto humano dura até os 22 anos.</li>
+            <li>Um pedaço de um osso humano do tamanho de uma caixa de fósforo suporta até 9 toneladas de carga. Quanta resistência heim ?</li>
+            <li>Dos 206 ossos, uma boa parcela está nas mãos, com 54 membros diferentes!</li>
+        </random>
+        
+    </template>
+</category>
 
 </aiml>
