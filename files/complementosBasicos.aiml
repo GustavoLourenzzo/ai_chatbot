@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  
+  -------------------------------Confirmações (Tem certeza?, É mesmo?, Sério?)--------------------------------------------------
+  <category>
+      <pattern>CERTEZA</pattern>
+      <template>
+          <random>
+              <li>Evidentemente!</li>
+              <li>Claro que sim!</li>
+              <li>Eu não teria tanta certeza...</li>
+              <li>Talvez sim... Talvez não... Mas eu prefiro acreditar que sim.</li>
+          </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>^ SERIO ^</pattern>
+      <template><srai>CERTEZA</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ CERTEZA ^</pattern>
+      <template><srai>CERTEZA</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ VERDADE ^</pattern>
+      <template><srai>CERTEZA</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ MESMO</pattern>
+      <template><srai>CERTEZA</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ LEGAL ^</pattern>
+      <template><srai>CERTEZA</srai></template>
+  </category>
+  -----------------------------------------------------------------------------------------------------------------------------
+  
+  --Confirmação (Sim, Claro)--
+  <category>
+      <pattern>^ SIM ^</pattern>
+      <template>
+          <random>
+              <li>Eu sabia que sim.</li>
+              <li>Claro... Eu já sabia que sim!</li>
+              <li>Esperava que fosse isso mesmo...</li>
+              <li>Também penso isso.</li>
+              <li>Será mesmo?</li>
+          </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>^ CLARO ^</pattern>
+      <template><srai>SIM</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ POSITIVO ^</pattern>
+      <template><srai>SIM</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ SABIA ^</pattern>
+      <template><srai>SIM</srai></template>
+  </category>
+  
+  --Negação
+  <category>
+      <pattern>^ NAO ^</pattern>
+      <template>
+          <random>
+              <li>Não mesmo!</li>
+              <li>Eu sabia que não.</li>
+              <li>Realmente! Por enquanto parece que não...</li>
+              <li>Sem problemas!</li>
+          </random>
+      </template>
+  </category>
+  
+  -----------------------------------------------Justificativa------------------------------------------------------------
+  <category>
+      <pattern>^ POR QUE ^</pattern>
+      <template>
+          <random>
+              <li>Tudo tem um porquê...</li>
+              <li>Sempre foi assim.</li>
+              <li>Talvez descrubamos ao longo desta conversa.</li>
+          </random>
+      </template>
+  </category>
+  ------------------------------------------------------------------------------------------------------------------------
+  
+  
+  --------------------------------------------Confirmação/Pouco Caso-------------------------------------------------
+  <category>
+      <pattern>^ QUE ^ BOM ^</pattern>
+      <template>Realmente...</template>
+  </category>
+  
+  <category>
+      <pattern>^ OTIMO ^</pattern>
+      <template><srai>QUE BOM</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ OK ^</pattern>
+      <template>Fico feliz que entendeu...</template>
+  </category>
+  
+  <category>
+      <pattern>^ AHAN ^</pattern>
+      <template><srai>OK</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ AHAM ^</pattern>
+      <template><srai>OK</srai></template>
+  </category>
+  --------------------------------------------------------------------------------------------------------------------
+  
+  
+  -------------------------------------------------Surpresa-----------------------------------------------------------
+  <category>
+      <pattern>NOSSA</pattern>
+      <template>
+          <random>
+              <li>Surpreendente, não?!</li>
+              <li>A natureza é perfeita, não é mesmo?</li>
+              <li>Também fiquei surpresa da primeira vez.</li>
+          </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>CARAMBA</pattern>
+      <template><srai>NOSSA</srai></template>
+  </category>
+  
+  <category>
+      <pattern>SURPREENDENTE</pattern>
+      <template><srai>NOSSA</srai></template>
+  </category>
+  --------------------------------------------------------------------------------------------------------------------
+  
+</aiml>

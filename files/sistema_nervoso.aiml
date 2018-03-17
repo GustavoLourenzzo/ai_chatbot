@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+   
+   <category>
+      <pattern>^ CEREBRO ^</pattern>
+      <template>
+          Viajando para o cerebro... 
+          <think>
+              <set name = "topic">CEREBRO</set>
+              <set name = "NOTFOUND"> CEREBRO </set>
+          </think>
+          <srai> <input/> VIAJANDO </srai>
+      </template>  
+   </category>
+   <category>
+      <pattern>^ SISTEMA NERVOSO ^</pattern>
+      <template>
+          Viajando para o sistema nervoso... 
+          <think>
+              <set name = "topic">SISTEMA NERVOSO</set>
+              <set name = "NOTFOUND"> SISTEMA NERVOSO </set>
+          </think>
+          <srai> <input/> VIAJANDO</srai>
+      </template>  
+   </category>
+   <category>
+      <pattern>^ ENCEFALO ^</pattern>
+      <template>
+          Viajando para o encéfalo... 
+          <think>
+              <set name = "topic">ENCEFALO</set>
+              <set name = "NOTFOUND"> ENCEFALO </set>
+          </think>
+          <srai> <input/> VIAJANDO </srai>
+      </template>  
+   </category>
+   <category>
+      <pattern>^ CEREBELO ^</pattern>
+      <template>
+          Viajando para o cerebelo... 
+          <think>
+              <set name = "topic">CEREBELO</set>
+              <set name = "NOTFOUND"> CEREBELO </set>
+          </think>
+          <srai> <input/> VIAJANDO</srai>
+      </template>  
+   </category>
+   <category>
+      <pattern>^ TRONCO ENCEFALICO ^</pattern>
+      <template>
+          Viajando para o tronco encefálico... 
+          <think>
+              <set name = "topic">TRONCO ENCEFALICO</set>
+              <set name = "NOTFOUND"> TRONCO ENCEFALICO </set>
+          </think>
+          <srai> <input/> VIAJANDO</srai>
+      </template>  
+   </category>
+   <category>
+      <pattern>^ MEDULA ESPINHAL ^</pattern>
+      <template>
+          Viajando para a medula espinhal... 
+          <think>
+              <set name = "topic">MEDULA ESPINHAL</set>
+              <set name = "NOTFOUND"> MEDULA ESPINHAL </set>
+          </think>
+          <srai> <input/> VIAJANDO</srai>
+      </template>  
+   </category>
+   <category>
+      <pattern>^ NERVOS ^</pattern>
+      <template>
+          Viajando para os nervos... 
+          <think>
+              <set name = "topic">NERVOS</set>
+              <set name = "NOTFOUND"> NERVOS </set>
+          </think>
+          <srai> <input/> VIAJANDO</srai>
+      </template>  
+   </category>
+   
+   
+   
+   <topic name = "CEREBRO">
+      <category>
+         <pattern>^ SOBRE O CEREBRO ^</pattern>
+         <template>Ok, vamos falar sobre o cérebro!</template>
+      </category>
+      <category>
+         <pattern>^ TEM ^ CEREBRO ^</pattern>
+         <template>
+             <srai> CEREBRO TEM </srai>
+         </template>
+      </category>
+      <category>
+         <pattern>^ CEREBRO ^ TEM ^</pattern>
+         <template>
+             O cérebro humano possui cerca de 86 bilhões de neurônios, ligados por mais de 1000 conexões sinápticas cada
+         </template>
+      </category>
+      <category>
+          <pattern>^ ONDE ^ CEREBRO ^</pattern>
+          <template> 
+              <srai> CEREBRO ONDE </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ CEREBRO ^ ONDE ^</pattern>
+          <template> 
+              O cérebro humano localiza-se na cabeça protegido pelo crânio, próximo aos aparatos sensoriais primários: visão, audição, equilíbrio, paladar, e olfato
+          </template>
+      </category>
+      <category>
+          <pattern>^ CEREBRO ^ FAZ ^</pattern>
+          <template>
+              <srai> FAZ CEREBRO </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ FAZ ^ CEREBRO ^</pattern>
+          <template>
+              A função do cérebro é a de gerador de comportamentos que promovam o bem-estar. O cérebro controla o comportamento, seja ativando músculos, seja causando a secreção de substâncias químicas, como os hormônios.
+          </template>
+      </category>
+      <category>
+          <pattern> ^ VIAJANDO ^ </pattern>
+          <template> Aqui estamos! </template>
+      </category>
+      <category>
+          <pattern> ^ CEREBRO ^ </pattern>
+          <template>
+              Desculpe, nao sei responder a sua pergunta. 
+              Talvez aqui você encontre sua resposta: https://pt.wikipedia.org/wiki/Cérebro
+          </template>
+      </category>
+   </topic>
+   
+   <topic name = "SISTEMA NERVOSO">
+      <category>
+         <pattern>^ SOBRE O SISTEMA NERVOSO ^</pattern>
+         <template>Ok, vamos falar sobre sistema nervoso!</template>
+      </category>
+      <category>
+         <pattern>^ TEM ^ SISTEMA NERVOSO ^</pattern>
+         <template>
+             <srai> SISTEMA NERVOSO TEM </srai>
+         </template>
+      </category>
+      <category>
+         <pattern>^ SISTEMA NERVOSO ^ TEM ^</pattern>
+         <template>
+             O sistema nervoso é constituído pelo sistema nervoso central e o periférico. O sistema nervoso central é constituído pelo encéfalo e pela medula espinhal, e o sistema nervoso periférico por nervos que se originam no encéfalo e medula espinhal
+         </template>
+      </category>
+      <category>
+          <pattern>^ ONDE ^ SISTEMA NERVOSO ^</pattern>
+          <template> 
+              <srai> SISTEMA NERVOSO ONDE </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ SISTEMA NERVOSO ^ ONDE ^</pattern>
+          <template> 
+              O sistema nervoso está em todas as partes do corpo
+          </template>
+      </category>
+      <category>
+          <pattern>^ SISTEMA NERVOSO ^ FAZ ^</pattern>
+          <template>
+               <srai> FAZ SISTEMA NERVOSO </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ FAZ ^ SISTEMA NERVOSO ^</pattern>
+          <template>
+              O sistema nervoso transmite sinais entre as diferentes partes do organismo e coordena suas ações voluntárias e involuntárias
+          </template>
+      </category>
+      <category>
+          <pattern> ^ VIAJANDO ^ </pattern>
+          <template> Aqui estamos! </template>
+      </category>
+      <category>
+          <pattern> ^ SISTEMA NERVOSO ^ </pattern>
+          <template>
+              Desculpe, nao sei responder a sua pergunta. 
+              Talvez aqui você encontre sua resposta: https://pt.wikipedia.org/wiki/Sistema_nervoso
+          </template>
+      </category>
+   </topic>
+   
+   <topic name = "ENCEFALO">
+      <category>
+         <pattern>^ SOBRE O ENCEFALO ^</pattern>
+         <template>Ok, vamos falar sobre o encéfalo!</template>
+      </category>
+      <category>
+         <pattern>^ TEM ^ ENCEFALO ^</pattern>
+         <template>
+             <srai> ENCEFALO TEM </srai>
+         </template>
+      </category>
+      <category>
+         <pattern>^ ENCEFALO ^ TEM ^</pattern>
+         <template>
+             O encéfalo humano é constituído pelo cérebro, cerebelo e tronco encefálico
+         </template>
+      </category>
+      <category>
+          <pattern>^ ONDE ^ ENCEFALO ^</pattern>
+          <template> 
+              <srai> ENCEFALO ONDE </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ ENCEFALO ^ ONDE ^</pattern>
+          <template> 
+              O encéfalo humano localiza-se na cabeça protegido pelo crânio, próximo aos aparatos sensoriais primários: visão, audição, equilíbrio, paladar, e olfato
+          </template>
+      </category>
+      <category>
+          <pattern>^ ENCEFALO ^ FAZ ^</pattern>
+          <template>
+              <srai> FAZ ENCEFALO </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ FAZ ^ ENCEFALO ^</pattern>
+          <template>
+              A função do encéfalo é receber informações sensoriais de origem tanto internas quanto externas, e em resposta gerar reações, comportamentos e estímulos que promovam de forma mais primitiva e autônoma a sobrevivência imediata da espécie, e ,em escala mais abrangente, o bem-estar pleno e duradouro do animal
+          </template>
+      </category>
+      <category>
+          <pattern> ^ VIAJANDO ^ </pattern>
+          <template> Aqui estamos! </template>
+      </category>
+      <category>
+          <pattern> ^ ENCEFALO ^ </pattern>
+          <template>
+              Desculpe, nao sei responder a sua pergunta. 
+              Talvez aqui você encontre sua resposta: https://pt.wikipedia.org/wiki/Encéfalo
+          </template>
+      </category>
+   </topic>
+   
+   <topic name = "CEREBELO">
+      <category>
+         <pattern>^ SOBRE O CEREBELO ^</pattern>
+         <template>Ok, vamos falar sobre o cerebelo!</template>
+      </category>
+      <category>
+         <pattern>^ TEM ^ CEREBELO ^</pattern>
+         <template>
+             <srai> CEREBELO TEM </srai>
+         </template>
+      </category>
+      <category>
+         <pattern>^ CEREBELO ^ TEM ^</pattern>
+         <template>
+             O cerebelo é dividido em uma substância branca (interior) e uma substância cinzenta (exterior). A substância branca é constituída por fibras nervosas mielinizadas eferentes e aferentes. A substância cinzenta pode ser subdividida em 3 camadas: Camada molecular, Camada de células de purkinje e Camada granular
+         </template>
+      </category>
+      <category>
+          <pattern>^ ONDE ^ CEREBELO ^</pattern>
+          <template> 
+              <srai> CEREBELO ONDE </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ CEREBELO ^ ONDE ^</pattern>
+          <template> 
+              O Cerebelo fica situado na fossa craniana posterior (fossas cerebelares do occipital), sendo coberto superiormente pela tenda do cerebelo. Constitui a maior parte do cérebro posterior, ficando posterior o quarto ventrículo, à protuberância e ao bulbo
+          </template>
+      </category>
+      <category>
+          <pattern>^ CEREBELO ^ FAZ ^</pattern>
+          <template>
+              <srai> FAZ CEREBELO </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ FAZ ^ CEREBELO ^</pattern>
+          <template>
+              O cerebelo é responsável pela manutenção do equilíbrio, pelo controle do tônus muscular, dos movimentos voluntários e aprendizagem motora. Dependemos do cerebelo para andar, correr, pular, andar de bicicleta, entre outras atividades
+          </template>
+      </category>
+      <category>
+          <pattern> ^ VIAJANDO ^ </pattern>
+          <template> Aqui estamos! </template>
+      </category>
+      <category>
+          <pattern> ^ CEREBELO ^ </pattern>
+          <template>
+              Desculpe, nao sei responder a sua pergunta. 
+              Talvez aqui você encontre sua resposta: https://pt.wikipedia.org/wiki/Cerebelo
+          </template>
+      </category>
+   </topic>
+   
+   <topic name = "TRONCO ENCEFALICO">
+      <category>
+         <pattern>^ SOBRE O TRONCO ENCEFALICO ^</pattern>
+         <template>Ok, vamos falar sobre o tronco encefálico!</template>
+      </category>
+      <category>
+         <pattern>^ TEM ^ TRONCO ENCEFALICO ^</pattern>
+         <template>
+             <srai> TRONCO ENCEFALICO TEM </srai>
+         </template>
+      </category>
+      <category>
+         <pattern>^ TRONCO ENCEFALICO ^ TEM ^</pattern>
+         <template>
+             O tronco encefalico possui corpos de neurônios que se agrupam em núcleos e fibras nervosas, que por sua vez, se agrupam em feixes denominados tratos, fascículos ou lemniscos
+         </template>
+      </category>
+      <category>
+          <pattern>^ ONDE ^ TRONCO ENCEFALICO ^</pattern>
+          <template> 
+              <srai> TRONCO ENCEFALICO ONDE </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ TRONCO ENCEFALICO ^ ONDE ^</pattern>
+          <template> 
+              O tronco encefálico interpõe-se entre a medula e o diencéfalo, situando-se ventralmente ao cerebelo, ou seja, conecta a medula espinal com as estruturas encefálicas localizadas superiormente
+          </template>
+      </category>
+      <category>
+          <pattern>^ TRONCO ENCEFALICO ^ FAZ ^</pattern>
+          <template>
+              <srai> FAZ TRONCO ENCEFALICO </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ FAZ ^ TRONCO ENCEFALICO ^</pattern>
+          <template>
+              O tronco encefálico conduz os impulsos nervosos do cérebro para a medula espinhal e vice-versa
+          </template>
+      </category>
+      <category>
+          <pattern> ^ VIAJANDO ^ </pattern>
+          <template> Aqui estamos! </template>
+      </category>
+      <category>
+          <pattern> ^ TRONCO ENCEFALICO ^ </pattern>
+          <template>
+              Desculpe, nao sei responder a sua pergunta. 
+              Talvez aqui você encontre sua resposta: https://www.auladeanatomia.com/novosite/sistemas/sistema-nervoso/tronco-encefalico/
+          </template>
+      </category>
+   </topic>
+
+   <topic name = "MEDULA ESPINHAL">
+      <category>
+         <pattern>^ SOBRE A MEDULA ESPINHAL ^</pattern>
+         <template>Ok, vamos falar sobre a medula espinhal!</template>
+      </category>
+      <category>
+         <pattern>^ TEM ^ MEDULA ESPINHAL ^</pattern>
+         <template>
+             <srai> MEDULA ESPINHAL TEM </srai>
+         </template>
+      </category>
+      <category>
+         <pattern>^ MEDULA ESPINHAL ^ TEM ^</pattern>
+         <template>
+             A medula espinhal contém todos os neurónios motores que enervam os músculos e também os eferentes
+         </template>
+      </category>
+      <category>
+          <pattern>^ ONDE ^ MEDULA ESPINHAL ^</pattern>
+          <template> 
+              <srai> MEDULA ESPINHAL ONDE </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ MEDULA ESPINHAL ^ ONDE ^</pattern>
+          <template> 
+              A medula espinhal fica no interior da coluna vertebral em seu canal vertebral, ao longo do seu eixo crânio-caudal
+          </template>
+      </category>
+      <category>
+          <pattern>^ MEDULA ESPINHAL ^ FAZ ^</pattern>
+          <template>
+              <srai> FAZ MEDULA ESPINHAL </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ FAZ ^ MEDULA ESPINHAL ^</pattern>
+          <template>
+              Distinguem-se na medula espinhal duas funções: a de condução nervosa e a de centro nervoso
+          </template>
+      </category>
+      <category>
+          <pattern> ^ VIAJANDO ^ </pattern>
+          <template> Aqui estamos! </template>
+      </category>
+      <category>
+          <pattern> ^ MEDULA ESPINHAL ^ </pattern>
+          <template>
+              Desculpe, nao sei responder a sua pergunta. 
+              Talvez aqui você encontre sua resposta: https://www.auladeanatomia.com/novosite/sistemas/sistema-nervoso/tronco-encefalico/
+          </template>
+      </category>
+   </topic>
+   
+   <topic name = "NERVOS">
+      <category>
+         <pattern>^ SOBRE OS NERVOS ^</pattern>
+         <template>Ok, vamos falar sobre os nervos!</template>
+      </category>
+      <category>
+         <pattern>^ TEM ^ NERVOS ^</pattern>
+         <template>
+             <srai> NERVOS TEM </srai>
+         </template>
+      </category>
+      <category>
+         <pattern>^ NERVOS ^ TEM ^</pattern>
+         <template>
+             Os nervos são organizados como um cabo telefônico: os axônios assemelham-se a fios individuais isolados pelo neurolema e endoneuro; os fios isolados são reunidos pelo perineuro e os feixes são circundados pelo epineuro, que forma o revestimento externo  do  cabo
+         </template>
+      </category>
+      <category>
+          <pattern>^ ONDE ^ NERVOS ^</pattern>
+          <template> 
+              <srai> NERVOS ONDE </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ NERVOS ^ ONDE ^</pattern>
+          <template> 
+              Os nervos estão por todas as partes do corpo
+          </template>
+      </category>
+      <category>
+          <pattern>^ NERVOS ^ FAZEM ^</pattern>
+          <template>
+              <srai> FAZEM NERVOS </srai>
+          </template>
+      </category>
+      <category>
+          <pattern>^ FAZEM ^ NERVOS ^</pattern>
+          <template>
+              A função dos nervos é conectar o sistema nervoso central ao resto do corpo. Importante destacar que existem dois tipos de nervos: os cranianos e os raquidianos
+          </template>
+      </category>
+      <category>
+          <pattern> ^ VIAJANDO ^ </pattern>
+          <template> Aqui estamos! </template>
+      </category>
+      <category>
+          <pattern> ^ NERVOS ^ </pattern>
+          <template>
+              Desculpe, nao sei responder a sua pergunta. 
+              Talvez aqui você encontre sua resposta: https://pt.wikipedia.org/wiki/Nervo
+          </template>
+      </category>
+   </topic>
+  
+</aiml>
+

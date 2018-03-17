@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+
+  ----------------------------------------------Início Boca-----------------------------------------------------------
+  ---------Gatilho-----------
+  <category>
+          <pattern>^ BOCA ^</pattern>
+          <template>
+              <think><set name="topic">boca</set></think> 
+              <srai>CONCEITO BOCA</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ DENTES ^</pattern>
+          <template>
+              <think><set name="topic">boca</set></think> 
+              <srai>DENTES</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ LABIOS ^</pattern>
+          <template>
+              <think><set name="topic">boca</set></think> 
+              <srai>LABIOS</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ LINGUA ^</pattern>
+          <template>
+              <think><set name="topic">boca</set></think> 
+              <srai>LINGUA</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ PAPILAS ^</pattern>
+          <template>
+              <think><set name="topic">boca</set></think> 
+              <srai>papilas</srai>
+          </template>
+  </category>
+  ---------------------------
+  
+  <topic name = "boca">
+      
+      ------Dentes--------
+      <category>
+          <pattern>^ DENTES ^</pattern>
+          <template>Os dentes são estruturas rígidas e ricas em cálcio, presas aos maxiliares. Sua principal função é a mastigação. <br/><srai>DENTESCURIOSIDADE</srai> </template>
+      </category>
+      <category>
+          <pattern>^ DENTE ^</pattern>
+          <template><srai>DENTES</srai></template>
+      </category>
+      <category>
+          <pattern>^ DENTES ^ VOCE ^</pattern>
+          <template>Eu sou uma célula. Não tenho dentes!</template>
+      </category>
+      <category>
+          <pattern>^ VOCE ^ DENTES ^</pattern>
+          <template>Eu sou uma célula. Não tenho dentes!</template>
+      </category>
+      
+      <category>
+          <pattern>^ QUANTOS ^ DENTES ^</pattern>
+          <template>O ser humano possui 32 dentes. Você ainda os tem?</template>
+      </category>
+      <category>
+          <pattern>DENTESCURIOSIDADE</pattern>
+          <template>
+              <random>
+                  <li>Você sabia que os dentes são a parte mais dura do corpo humano?</li>
+                  <li>Sabia que as cáries dentárias são a segunda doença mais comum em todo o mundo?</li>
+                  <li>O tecido mais duro do corpo é o esmalte dos dentes. Ele é um tecido altamente mineralizado. Você sabia disso ?</li>
+                  <li>Você sabia que uma criança possui somente 20 dentes?</li>
+                  <li></li>
+              </random>
+          </template>
+      </category>
+      --------------------
+      
+      ------Lábios--------
+      <category>
+          <pattern>^ LABIOS ^</pattern>
+          <template>Os lábios são as bordas de mucosa que revestem a boca humana. São dividos em lábios superior e inferior. <br/><srai>LABIOSCURIOSIDADE</srai> </template>
+      </category>
+      <category>
+          <pattern>^ LABIO ^</pattern>
+          <template><srai>LABIOS</srai></template>
+      </category>
+      <category>
+          <pattern>LABIOSCURIOSIDADE</pattern>
+          <template>
+              <random>
+                  <li>Sabia que usar os lábios para sugar é uma das primeiras habilidades que temos ao nascer?</li>
+                  <li>Os lábios são altamente cruciais para a fala. Eles ajudam a bloquear o ar que vem dos pulmões e formar os fonemas. Sabia disso?</li>
+                  <li></li>
+              </random>
+          </template>
+      </category>
+      --------------------
+      
+      ------Língua--------
+      <category>
+          <pattern>^ LINGUAS ^</pattern>
+          <template>A língua é um órgão formado por musculatura estriada esquelética que faz parte do sistema digestivo.<br/><srai>LINGUACURIOSIDADE</srai> </template>
+      </category>
+      <category>
+          <pattern>^ PAPILAS ^</pattern>
+          <template>A língua é coberta por papilas gustativas. Elas são responsáveis pelo reconhecimento do sabor das diferentes substâncias que ingerimos.</template>
+      </category>
+      <category>
+          <pattern>^ LINGUA ^</pattern>
+          <template><srai>LINGUAS</srai></template>
+      </category>
+      <category>
+          <pattern>^ GOSTO ^</pattern>
+          <template><srai>PAPILAS</srai></template>
+      </category>
+      <category>
+          <pattern>^ SABOR ^</pattern>
+          <template><srai>PAPILAS</srai></template>
+      </category>
+      <category>
+          <pattern>^ SENTIR ^</pattern>
+          <template><srai>PAPILAS</srai></template>
+      </category>
+      <category>
+          <pattern>^ PALADAR ^</pattern>
+          <template><srai>PAPILAS</srai></template>
+      </category>
+      <category>
+          <pattern>LINGUACURIOSIDADE</pattern>
+          <template>
+              <random>
+                  <li>Você sabia que a língua é o músculo mais forte do corpo?</li>
+                  <li>Sabia que além do amargo, doce, salgado e azedo, ainda podemos sentir mais dois gostos? Já ouviu falar sobre o metálicao e o umani?</li>
+                  <li>A língua é a parte do corpo que se cura mais rápido. Sabia disso?</li>
+                  <li>Já ouviu falar que assim como as impressões digitais, a impressão da língua de cada pessoa é única?</li>
+              </random>
+          </template>
+      </category>
+      --------------------
+      
+      -------Gengiva------
+      <category>
+          <pattern>^ GENGIVA ^</pattern>
+          <template>A gengiva é o tecido epitelial, ricamente vascularizado, que reveste o osso e serve de sustentação dos dentes.</template>
+      </category>
+      <category>
+          <pattern>^ GENGIVAS ^</pattern>
+          <template><srai>GENGIVA</srai></template>
+      </category>
+      ---------------------
+      
+      -------Boca----------
+      <category>
+          <pattern>^ BOCA ^</pattern>
+          <template>
+              <random>
+                  <li>A boca é o ponto de entrada de dois sistemas: o digestivo e o respiratório.<srai>CURIOSIDADES</srai></li>
+                  <li>É através dela que os animais ingerem alimento e produzem sons para se comunicar.<srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      <category>
+          <pattern>CURIOSIDADES</pattern>
+          <template>
+              <random>
+                  <li><srai>DENTESCURIOSIDADE</srai></li>
+                  <li><srai>LABIOSCURIOSIDADE</srai></li>
+                  <li><srai>LINGUACURIOSIDADE</srai></li>
+                  <li></li>
+              </random>
+          </template>
+      </category>
+      ----------------------
+      
+  </topic>
+  ---------------------------------------Fim Boca-------------------------------------------------------------------
+  
+  
+  
+  
+  
+-----------------------------------------Início Tubos (Laringe, Faringe e Esôfago)--------------------------------
+---------Gatilho-----------
+  <category>
+          <pattern>^ FARINGE ^</pattern>
+          <template>
+              <think><set name="topic">tubos</set></think> 
+              <srai>faringe</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ ESOFAGO ^</pattern>
+          <template>
+              <think><set name="topic">tubos</set></think> 
+              <srai>esofago</srai>
+          </template>
+  </category>
+  ---------------------------
+
+  <topic name = "tubos">
+      -------Faringe----------
+      <category>
+          <pattern>^ FARINGE ^</pattern>
+          <template>
+              <random>
+                  <li>Na faringe ocorre o fenômeno da deglutição.<srai>CURIOSIDADES</srai></li>
+                  <li>A faringe é um órgão que faz parte tanto do sistema respiratório quanto do sistema digestório.<srai>CURIOSIDADES</srai></li>
+                  <li>É um canal muscular membranoso, que se comunica com o nariz e a boca, ligando-os à laringe e ao esôfago.<srai>CURIOSIDADES</srai></li>
+                  <li>A faringe tem a função de fazer a passagem do ar inalado e dos alimentos ingeridos até os outros órgãos dos sistemas respiratório e digestório.<srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      ------------------------
+      
+      -------Esôfago----------
+      <category>
+          <pattern>^ ESOFAGO ^</pattern>
+          <template>
+              <random>
+                  <li>O esôfago é um tubo muscular que liga a faringe ao estômago.<srai>CURIOSIDADES</srai></li>
+                  <li>É pelo esôfago por onde passam os alimentos ingeridos.<srai>CURIOSIDADES</srai></li>
+                  <li>Uma vez dentro do esôfago o alimento será impulsionado por meio de movimentos peristálticos, que são involuntários<srai>CURIOSIDADES</srai></li>
+                  <li>O esôfago é oco e formado por três camadas: mucosa, submucosa e muscular.<srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      ------------------------
+      
+      ------Curiosidades------
+      <category>
+          <pattern>CURIOSIDADES</pattern>
+          <template>
+              <random>
+                  <li><br/>Você sabia que o movimento peristáltico do sistema digestivo é o responsável por podermos ingerir alimentos de cabeça para baixo?</li>
+                  <li><br/>Já ouviu falar que o esôfago é a parte mais estreita de todo o tubo digestivo?</li>
+                  <li><br/>Sabia que a sensação de fome tem origem no esôfago?</li>
+                  <li></li>
+              </random>
+          </template>
+      </category>
+      ------------------------
+  </topic>
+-----------------------------------------Fim Tubos (Laringe, Faringe e Esôfago)-----------------------------------
+  
+  
+  
+ 
+  
+  
+------------------------------------------Início Estômago--------------------------------------------------------------
+---------Gatilho-----------
+  <category>
+          <pattern>^ ESTOMAGO ^</pattern>
+          <template>
+              <think><set name="topic">estomago</set></think> 
+              <srai>estomago</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ GASTRICO ^</pattern>
+          <template>
+              <think><set name="topic">estomago</set></think> 
+              <srai>gastrico</srai>
+          </template>
+  </category>
+  ---------------------------
+
+
+<topic name = "estomago">
+      -------Suco Gástrico----------
+      <category>
+          <pattern>^ GASTRICO ^</pattern>
+          <template>O suco gástrico é o líquido que atua na digestão dos alimentos que são ingeridos. É responsável por quebrar as moléculas para que possam ser absorvidas pelo organismo.</template>
+      </category>
+      <category>
+          <pattern>^ GASTRICA ^</pattern>
+          <template><srai>GASTRICO</srai></template>
+      </category>
+      -----------------------------
+      
+      -------Estômago--------------
+      <category>
+          <pattern>^ ESTOMAGO ^</pattern>
+          <template>
+              <random>
+                  <li>O estômago é onde os alimentos são pré-digeridos para serem absorvidos no intestino. <br/><srai>CURIOSIDADES</srai></li>
+                  <li>É no interior do estômago que se encontram as glândulas gástricas que produzem o suco gástrico.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O estômago é uma extensão do tubo digestivo localizado entre o esôfago e o intestino delgado.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O estômago é um dos principais órgãos responsáveis pela digestão das proteínas.<br/><srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      -----------------------------
+      
+      -------Curiosidades----------
+      <category>
+          <pattern>^ CURIOSIDADES ^</pattern>
+          <template>
+              <random>
+                  <li>Sabia que se o estômago não renovasse o seu muco ele digeriria a si próprio?</li>
+                  <li>Você sabia que elasticidade do estômago permite que ele aumente sua capacidade em até 80 vezes?</li>
+                  <li>O estômago produz cerca de três litros de suco gástrico por dia. Sabia disso?</li>
+                  <li>Você sabia que o roncar do estômago pode acontecer a qualquer momento, mesmo quando não estamos com fome?</li>
+                  <li></li>
+              </random>
+          </template>
+      </category>
+      -------------------------------
+</topic>
+-------------------------------------------Fim Estômago--------------------------------------------------------------
+  
+  
+  
+
+------------------------------------------Início Fígado--------------------------------------------------------------
+---------Gatilho-----------
+  <category>
+          <pattern>^ FIGADO ^</pattern>
+          <template>
+              <think><set name="topic">figado</set></think> 
+              <srai>figado</srai>
+          </template>
+  </category>
+  ---------------------------
+
+<topic name = "figado">
+      -------Bile----------
+      <category>
+          <pattern>^ BILE ^</pattern>
+          <template>A bile é um fluido produzido pelo fígado. Ele atua na digestão de gorduras e na absorção de substâncias nutritivas da dieta ao passarem pelo intestino.</template>
+      </category>
+      <category>
+          <pattern>^ BILLIS ^</pattern>
+          <template><srai>BILE</srai></template>
+      </category>
+      <category>
+          <pattern>^ BILIAR ^</pattern>
+          <template><srai>BILE</srai></template>
+      </category>
+      -----------------------------
+      
+      -------Fígado--------------
+      <category>
+          <pattern>^ FIGADO ^</pattern>
+          <template>
+              <random>
+                  <li>O fígado é um órgão do corpo humano e pode executar mais de 500 funções. Uma das principais consiste em participar da produção de células sanguíneas. <br/><srai>CURIOSIDADES</srai></li>
+                  <li>O fígado é um órgão que atua como glândula exócrina (liberando secreções) e glândula endócrina, liberando substâncias no sangue e sistema linfático.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O fígado está relacionado com funções importantes do nosso corpo, como a regulação do metabolismo de vários nutrientes, síntese de proteínas e outras moléculas, degradação de hormônios e armazenamento de substâncias.<br/><srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      -----------------------------
+      
+      -------Curiosidades----------
+      <category>
+          <pattern>^ CURIOSIDADES ^</pattern>
+          <template>
+              <random>
+                  <li>Sabia que o fígado é a maior glândula e o segundo maior órgão do corpo humano?</li>
+                  <li>O fígado é o único órgão capaz de reconstitui até 75% dos seus tecidos. Sabido disto?</li>
+                  <li>Você sabia que o fígado é o órgão mais pesado do corpo? Ele representa entre 2% e 3% do nosso peso total.</li>
+                  <li></li>
+              </random>
+          </template>
+      </category>
+      -------------------------------
+</topic>
+-------------------------------------------Fim Fígado--------------------------------------------------------------  
+  
+
+
+
+------------------------------------------Início Pâncreas--------------------------------------------------------------
+---------Gatilho-----------
+  <category>
+          <pattern>^ PANCREAS ^</pattern>
+          <template>
+              <think><set name="topic">pancreas</set></think> 
+              <srai>pancreas</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ PANCREATICO ^</pattern>
+          <template>
+              <think><set name="topic">pancreas</set></think> 
+              <srai>pancreas</srai>
+          </template>
+  </category>
+  ---------------------------
+
+<topic name = "pancreas">
+      -------Suco Pancreático----------
+      <category>
+          <pattern>^ PANCREATICO ^</pattern>
+          <template>O suco pancreático é uma secreção produzida pelo pâncreas que atua no processo digestivo. Atua na digestão de proteínas, carboidratos, triglicerídeos e ácidos nucléicos.</template>
+      </category>
+      <category>
+          <pattern>^ SUCO ^ PANCREAS ^</pattern>
+          <template><srai>pancreatico</srai></template>
+      </category>
+      -----------------------------
+      
+      -------Pâncreas--------------
+      <category>
+          <pattern>^ PANCREAS ^</pattern>
+          <template>
+              <random>
+                  <li>O pâncreas é um órgão produtor de enzimas e proteínas que aumentam a rapidez das transformações químicas.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O pâncreas é uma glândula do sistema digestivo. Ele é responsável por produzir o suco pancreático que age no processo digestivo, pois possui enzimas digestivas.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O pâncreas é uma glândula mista localizada na região do abdômen que produz hormônios e enzimas.<br/><srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      -----------------------------
+      
+      -------Curiosidades----------
+      <category>
+          <pattern>^ CURIOSIDADES ^</pattern>
+          <template>
+              <random>
+                  <li>Você sabia que é possível viver sem o pâncreas? Para isso é necessário ingerir diariamente as enzimas por ele produzidas.</li>
+                  <li></li>
+              </random>
+          </template>
+      </category>
+      -------------------------------
+</topic>
+-------------------------------------------Fim Pâncreas--------------------------------------------------------------   
+  
+
+
+
+------------------------------------------Início Intestino-------------------------------------------------------------
+---------Gatilho-----------
+  <category>
+          <pattern>^ DELGADO ^</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>delgado</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ GROSSO ^</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>grosso</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ INTESTINO</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>intestino</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ JEJUNO ^</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>jejuno</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ DUODENO ^</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>duodeno</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ ILEO ^</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>ileo</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ CECO ^</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>ceco</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ COLON ^</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>colon</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ RETO ^</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>reto</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ ANUS ^</pattern>
+          <template>
+              <think><set name="topic">intestino</set></think> 
+              <srai>anus</srai>
+          </template>
+  </category>
+  ---------------------------
+
+<topic name = "intestino">
+      -------Duodeno----------
+      <category>
+          <pattern>^ DUODENO ^</pattern>
+          <template>O dudodeno é a parte do intestino que o suco pancreático e o suco biliar agem, transformando a quimo em quilo.</template>
+      </category>
+      -----------------------------
+      
+      -------Jejuno----------
+      <category>
+          <pattern>^ JEJUNO ^</pattern>
+          <template>O jejuno é a parte do intestino onde há a absorção dos nutrientes presentes nos alimentos ingeridos.</template>
+      </category>
+      -----------------------------
+      
+      -------Íleo----------
+      <category>
+          <pattern>^ ILEO ^</pattern>
+          <template>É responsável pr dar continuidade à absorção dos nutrientes que começou no jejuno.</template>
+      </category>
+      -----------------------------
+      
+      -------Ceco----------
+      <category>
+          <pattern>^ CECO ^</pattern>
+          <template>O ceco é a primeira parte do intestino grosso, onde os resíduos alimentares passam ao cólon.</template>
+      </category>
+      -----------------------------
+      
+      -------Cólon----------
+      <category>
+          <pattern>^ COLON ^</pattern>
+          <template>É a maior parte do intestino grosso. Grande parte da água é absorvida nessa parte.</template>
+      </category>
+      <category>
+          <pattern>^ SEMICOLON ^</pattern>
+          <template><srai>colon</srai></template>
+      </category>
+      -----------------------------
+      
+      -------Reto----------fezes
+      <category>
+          <pattern>^ RETO ^</pattern>
+          <template>O reto é a parte responsável por fazer a comunicação do cólon com o exterior.</template>
+      </category>
+      -----------------------------
+      
+      -------Ãnus----------
+      <category>
+          <pattern>^ ANUS ^</pattern>
+          <template>
+              <random>
+                  <li>O ânus é o orifício no final do intestino grosso por onde são eliminadas as fezes e gases intestinais.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O anus trata-se de uma abertura reguladora da saída das fezes, que são constantemente empurradas pela musculatura lisa do intestino.<br/><srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      -----------------------------
+      
+      -------Fezes----------
+      <category>
+          <pattern>^ FEZES ^</pattern>
+          <template>As fezes humanas consistem no material restante após a digestão e absorção dos alimentos pelo tubo digestivo.<br/><srai>CURIOSIDADES</srai></template>
+      </category>
+      -----------------------------
+      
+      -------Intestino Delgado--------------
+      <category>
+          <pattern>^ DELGADO ^</pattern>
+          <template>
+              <random>
+                  <li>O intestino delgado é a parte do tubo digestivo que vai do estômago até o intestino grosso.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O intestino delgado é a porção do sistema digestório responsável por absorver a maior parte dos nutrientes que ingerimos.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O intestino delgado é responsável pela absorção da maior parte dos nutrientes. É dividido em duodeno, jejuno e íleo.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>Com os movimentos do intestino delgado e com a ação dos sucos (pancreático e intestinal), o quimo é transformado em quilo, que é o produto final da digestão.<br/><srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      -----------------------------
+      
+      -------Quimo--------------
+      <category>
+          <pattern>^ QUIMO ^</pattern>
+          <template>Quimo é o nome que se dá ao alimento que chega ao estômago e se transforma em um líquido pastoso.</template>
+      </category>
+      -----------------------------
+      
+      -------Quilo--------------
+      <category>
+          <pattern>^ QUILO ^</pattern>
+          <template>Quilo é o alimento parcialmente digerido (quimo) que chega ao intestino.</template>
+      </category>
+      -----------------------------
+      
+      -------Intestino Grosso--------------
+      <category>
+          <pattern>^ GROSSO ^</pattern>
+          <template>
+              <random>
+                  <li>O intestino grosso é a última parte do trato gastrointestinal e do sistema digestivo em vertebrados.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>É a parte responsável pelo importante processo de absorção da água, o que determina a consistência do bolo fecal.<br/><srai>CURIOSIDADES</srai></li>
+                  <li>O intestino grosso é um órgão do sistema digestório responsável pela absorção da água. É composto por três partes: o ceco, o cólon e o reto.<br/><srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      -----------------------------
+      
+      -------Intestino----------
+      <category>
+          <pattern>^ INTESTINO</pattern>
+          <template>O intestino é o segmento do sistema digestivo que se estende a partir do estômago e termina no ânus. Ele é dividido em intestino delgado e intestino grosso.<br/><srai>CURIOSIDADES</srai></template>
+      </category>
+      -----------------------------
+      
+      -------Curiosidades----------
+      <category>
+          <pattern>^ CURIOSIDADES ^</pattern>
+          <template>
+              <random>
+                  <li>Você sabia que o intestino delgado mede de 6 a 9 metros?</li>
+                  <li>Sabia que o intestino grosso é três vezes mais largo que o delgado?</li>
+                  <li></li>
+              </random>
+          </template>
+      </category>
+      -------------------------------
+</topic>
+-------------------------------------------Fim Intestino-------------------------------------------------------------- 
+  
+  
+  
+------------------------------------------Início Sistema Digestivo--------------------------------------------------------------
+---------Gatilho-----------
+  <category>
+          <pattern>^ DIGESTIVO ^</pattern>
+          <template>
+              <think><set name="topic">digestivo</set></think> 
+              <srai>digestivo</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ DIGESTORIO ^</pattern>
+          <template>
+              <think><set name="topic">digestivo</set></think> 
+              <srai>digestivo</srai>
+          </template>
+  </category>
+  <category>
+          <pattern>^ DIGESTAO ^</pattern>
+          <template>
+              <think><set name="topic">digestivo</set></think> 
+              <srai>digestao</srai>
+          </template>
+  </category>
+  ---------------------------
+
+<topic name = "digestivo">
+
+      -------Sistema Digestivo--------
+      <category>
+          <pattern>^ DIGESTIVO ^</pattern>
+          <template>
+              <random>
+                  <li>O sistema digestivo pode ser visto como um tubo de 10 a 12 metros de comprimento, colocado adiante da coluna vertebral, e aberto nas duas extremidades. Ele é responsável pela digestão e absorção de nutrientes.<srai>CURIOSIDADES</srai></li>
+                  <li>É o sistema responsável por obter dos alimentos ingeridos os nutrientes necessários às diferentes funções do organismo, como crescimento, energia para reprodução, locomoção, etc.<srai>CURIOSIDADES</srai></li>
+                  <li>É o sistema composto por um conjunto de órgãos que têm por função a realização da digestão.<srai>CURIOSIDADES</srai></li>
+                  <li>É o conjunto de órgãos que se extende da boca até o ânus e é responsável pela digestão e absorção dos nutrientes.<srai>CURIOSIDADES</srai></li>
+              </random>
+          </template>
+      </category>
+      
+      <category>
+          <pattern>^ DIGESTORIO ^</pattern>
+          <template><srai>DIGESTIVO</srai></template>
+      </category>
+      
+      <category>
+          <pattern>^ DIGESTAO ^</pattern>
+          <template>Digestão é a transformação dos alimentos em substâncias assimiláveis, realizada no aparelho digestório ou digestivo.</template>
+      </category>
+      -----------------------------
+      
+      -------Curiosidades----------
+      <category>
+          <pattern>^ CURIOSIDADES ^</pattern>
+          <template>
+              <random>
+              <li><think><set name="topic">boca</set></think> <srai>CURIOSIDADES</srai>
+              </li>
+              <li><think><set name="topic">estomago</set></think><br/> <srai>CURIOSIDADES</srai></li>
+              <li><think><set name="topic">tubos</set></think> <srai>CURIOSIDADES</srai>
+              </li>
+              <li><think><set name="topic">intestino</set></think> <srai>CURIOSIDADES</srai></li>
+              <li><think><set name="topic">pancreas</set></think> <srai>CURIOSIDADES</srai>
+              </li>
+              <li><think><set name="topic">figado</set></think> <srai>CURIOSIDADES</srai>
+              </li>
+          </random>
+          </template>
+      </category>
+      -------------------------------
+</topic>
+-------------------------------------------Fim Sistema Digestivo-------------------------------------------------------   
+  
+</aiml>

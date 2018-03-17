@@ -3,7 +3,27 @@
 	<category>
 		<pattern>*</pattern>
 		<template>
-			###
+           <condition name = "NOTFOUND" value = "CEREBRO">
+              <srai><input/> CEREBRO </srai>
+           </condition>
+           <condition name = "NOTFOUND" value = "SISTEMA NERVOSO">
+               <srai><input/> SISTEMA NERVOSO </srai>
+           </condition>
+           <condition name = "NOTFOUND" value = "ENCEFALO">
+              <srai><input/> ENCEFALO </srai>
+           </condition>
+           <condition name = "NOTFOUND" value = "CEREBELO">
+               <srai><input/> CEREBELO </srai>
+           </condition>
+           <condition name = "NOTFOUND" value = "TRONCO ENCEFALICO">
+               <srai><input/> TRONCO ENCEFALICO </srai>
+           </condition>
+           <condition name = "NOTFOUND" value = "MEDULA ESPINHAL">
+               <srai><input/> MEDULA ESPINHAL </srai>
+           </condition>
+           <condition name = "NOTFOUND" value = "NERVOS">
+               <srai><input/> NERVOS </srai>
+           </condition>
 		</template>
 	</category>
 </aiml>
